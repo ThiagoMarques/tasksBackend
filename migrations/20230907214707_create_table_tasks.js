@@ -6,9 +6,9 @@ exports.up = function(knex) {
     return knex.schema.createTable('tasks', table => {
         table.increments('id').primary()
         table.string('desc').notNullable()
-        table.string('estimateAt').notNullable()
-        table.string('doneAt').notNullable()
-        table.string('userId').references('id').inTable('users').notNullable()
+        table.dateTime('estimateAt').notNullable()
+        table.dateTime('doneAt').notNullable()
+        table.integer('userId').references('id').inTable('users').notNullable()
       })
 };
 
