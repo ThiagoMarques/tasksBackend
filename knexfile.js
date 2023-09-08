@@ -9,7 +9,8 @@ module.exports = {
   connection: {
     database: 'tasks',
     user: 'postgres',
-    password: '315228'
+    password: '315228',
+    port: 5433
   },
   pool: {
     min: 2,
