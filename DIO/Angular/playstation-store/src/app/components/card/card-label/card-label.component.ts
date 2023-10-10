@@ -9,5 +9,5 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./card-label.component.scss']
 })
 export class CardLabelComponent {
-  @Input() gameLabel:string=""
+  @Input() gameLabel: string = ''
 }
