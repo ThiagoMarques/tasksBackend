@@ -18,4 +18,8 @@ describe('HomeComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('Should test minimum title', () => {
+    expect(component.cards.length).not.toBeLessThan(4);
+  });
 });

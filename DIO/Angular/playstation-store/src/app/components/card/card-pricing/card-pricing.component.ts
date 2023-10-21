@@ -9,6 +9,6 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./card-pricing.component.scss']
 })
 export class CardPricingComponent {
-	@Input() gameType:string ="Digital PS4"
-	@Input() gamePrice:string = "R$ 399,90"
+	@Input() gameType: string = ''
+	@Input() gamePrice: string = ''
 }
